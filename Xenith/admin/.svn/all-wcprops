@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/xenithproj/!svn/ver/17/Xenith/Xenith/admin
+END
+index.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/index.aspx
+END
+user.html
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/user.html
+END
+login.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/xenithproj/!svn/ver/17/Xenith/Xenith/admin/login.aspx
+END
+logout.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/xenithproj/!svn/ver/17/Xenith/Xenith/admin/logout.aspx
+END
+index.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/index.aspx.designer.cs
+END
+login.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/xenithproj/!svn/ver/16/Xenith/Xenith/admin/login.aspx.designer.cs
+END
+index.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/xenithproj/!svn/ver/16/Xenith/Xenith/admin/index.aspx.cs
+END
+logout.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/xenithproj/!svn/ver/17/Xenith/Xenith/admin/logout.aspx.designer.cs
+END
+login.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/xenithproj/!svn/ver/16/Xenith/Xenith/admin/login.aspx.cs
+END
+logout.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/xenithproj/!svn/ver/17/Xenith/Xenith/admin/logout.aspx.cs
+END
+manage_page_content.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/manage_page_content.aspx
+END
+manage_ads.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/manage_ads.aspx
+END
+manage_page_content.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/manage_page_content.aspx.designer.cs
+END
+manage_page_content.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/manage_page_content.aspx.cs
+END
+manage_ads.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/manage_ads.aspx.designer.cs
+END
+manage_ads.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/manage_ads.aspx.cs
+END
+XenithAdmin.Master
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/xenithproj/!svn/ver/17/Xenith/Xenith/admin/XenithAdmin.Master
+END
+users.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/users.html
+END
+XenithAdmin.Master.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/xenithproj/!svn/ver/2/Xenith/Xenith/admin/XenithAdmin.Master.designer.cs
+END
+XenithAdmin.Master.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/xenithproj/!svn/ver/16/Xenith/Xenith/admin/XenithAdmin.Master.cs
+END

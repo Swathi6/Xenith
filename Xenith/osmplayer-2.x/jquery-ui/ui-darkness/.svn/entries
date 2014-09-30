@@ -1,0 +1,55 @@
+8
+
+dir
+30
+https://innovationxtreme.svn.cloudforge.com/xenithproj/Xenith/Xenith/osmplayer-2.x/jquery-ui/ui-darkness
+https://innovationxtreme.svn.cloudforge.com/xenithproj
+
+
+
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a28ecf39-8f40-47a2-b730-172ac8bc858f
+
+jquery-ui.css
+file
+
+
+
+
+2013-12-11T00:30:40.167505Z
+1ffdd9c71047942a6d24ae6d9fe029c7
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+images
+dir
+
+jquery-ui-1.8.18.custom.css
+file
+
+
+
+
+2013-12-11T00:30:40.170506Z
+1ffdd9c71047942a6d24ae6d9fe029c7
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+

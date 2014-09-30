@@ -1,0 +1,53 @@
+8
+
+dir
+30
+https://innovationxtreme.svn.cloudforge.com/xenithproj/Xenith/packages/Newtonsoft.Json.5.0.8/lib/net35
+https://innovationxtreme.svn.cloudforge.com/xenithproj
+
+
+
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a28ecf39-8f40-47a2-b730-172ac8bc858f
+
+Newtonsoft.Json.dll
+file
+
+
+
+
+2013-12-11T00:30:27.568785Z
+96bc18f8dee95af3771763dee0e15986
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+has-props
+
+Newtonsoft.Json.xml
+file
+
+
+
+
+2013-12-11T00:30:27.580785Z
+fa4d5a77bdc8551250d36e778b199a29
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+

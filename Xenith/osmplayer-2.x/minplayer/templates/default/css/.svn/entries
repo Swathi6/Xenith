@@ -1,0 +1,43 @@
+8
+
+dir
+30
+https://innovationxtreme.svn.cloudforge.com/xenithproj/Xenith/Xenith/osmplayer-2.x/minplayer/templates/default/css
+https://innovationxtreme.svn.cloudforge.com/xenithproj
+
+
+
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a28ecf39-8f40-47a2-b730-172ac8bc858f
+
+images
+dir
+
+minplayer_default.css
+file
+
+
+
+
+2013-12-11T00:30:48.914006Z
+b39c7aa12abb728223065a5a188980c4
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+

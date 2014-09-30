@@ -1,0 +1,73 @@
+8
+
+dir
+30
+https://innovationxtreme.svn.cloudforge.com/xenithproj/Xenith/Xenith/admin/lib/fullcalendar-1.5.3
+https://innovationxtreme.svn.cloudforge.com/xenithproj
+
+
+
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a28ecf39-8f40-47a2-b730-172ac8bc858f
+
+jquery
+dir
+
+GPL-LICENSE.txt
+file
+
+
+
+
+2013-12-11T00:31:24.142021Z
+2c1778696d3ba68569a0352e709ae6b7
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+changelog.txt
+file
+
+
+
+
+2013-12-11T00:31:24.146021Z
+27b4f043ccfc972e8ed563c99d80d2e2
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+demos
+dir
+
+MIT-LICENSE.txt
+file
+
+
+
+
+2013-12-11T00:31:24.149021Z
+2e8126993cb6159ac0a2020af2b010ac
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+fullcalendar
+dir
+

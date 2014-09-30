@@ -1,0 +1,43 @@
+8
+
+dir
+30
+https://innovationxtreme.svn.cloudforge.com/xenithproj/Xenith/packages
+https://innovationxtreme.svn.cloudforge.com/xenithproj
+
+
+
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a28ecf39-8f40-47a2-b730-172ac8bc858f
+
+Newtonsoft.Json.5.0.8
+dir
+
+repositories.config
+file
+
+
+
+
+2013-12-11T00:30:30.778968Z
+ca752ba8277dda03c2997f41eec7378d
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+

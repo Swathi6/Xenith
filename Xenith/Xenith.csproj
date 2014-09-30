@@ -1,0 +1,1973 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{792ACD2D-8174-45B6-893D-77132C30F0C9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xenith</RootNamespace>
+    <AssemblyName>Xenith</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="admin\images\140x140.gif" />
+    <Content Include="admin\images\170x170.gif" />
+    <Content Include="admin\images\background.png" />
+    <Content Include="admin\images\dust.png" />
+    <Content Include="admin\images\furley_bg.png" />
+    <Content Include="admin\images\middleman.png" />
+    <Content Include="admin\images\subtle_surface.png" />
+    <Content Include="admin\index.aspx" />
+    <Content Include="admin\javascripts\graphDemo.js" />
+    <Content Include="admin\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="admin\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="admin\lib\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="admin\lib\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="admin\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="admin\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="admin\lib\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="admin\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="admin\lib\font-awesome\docs\assets\css\font-awesome-ie7.css" />
+    <Content Include="admin\lib\font-awesome\docs\assets\css\font-awesome.css" />
+    <Content Include="admin\lib\font-awesome\docs\assets\css\prettify.css" />
+    <Content Include="admin\lib\font-awesome\docs\assets\css\site.css" />
+    <Content Include="admin\lib\font-awesome\docs\assets\font\fontawesome-webfont.svg" />
+    <Content Include="admin\lib\font-awesome\docs\assets\ico\favicon.ico" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\backbone.min.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\index\index.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\jquery-1.7.1.min.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\prettify.min.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-alert.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-button.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-carousel.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-collapse.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-dropdown.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-modal.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-popover.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-scrollspy.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tab.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tooltip.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-transition.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-typeahead.js" />
+    <Content Include="admin\lib\font-awesome\docs\assets\js\underscore.min.js" />
+    <Content Include="admin\lib\font-awesome\docs\index.html" />
+    <Content Include="admin\lib\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\changelog.txt" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\agenda-views.html" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\basic-views.html" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\cupertino\theme.css" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\default.html" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\external-dragging.html" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\gcal.html" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\json.html" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\selectable.html" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\demos\theme.html" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.css" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.js" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.min.js" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.print.css" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\fullcalendar\gcal.js" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\GPL-LICENSE.txt" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\jquery\jquery-1.7.1.min.js" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\jquery\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="admin\lib\fullcalendar-1.5.3\MIT-LICENSE.txt" />
+    <Content Include="admin\lib\jqplot\changes.txt" />
+    <Content Include="admin\lib\jqplot\copyright.txt" />
+    <Content Include="admin\lib\jqplot\docs\files\changes-txt.html" />
+    <Content Include="admin\lib\jqplot\docs\files\gpl-2-0-txt.html" />
+    <Content Include="admin\lib\jqplot\docs\files\images\background.jpg" />
+    <Content Include="admin\lib\jqplot\docs\files\images\basicline.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\basiclogaxis.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\basiclogoptions.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\basicoptions.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\dualaxis.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\logo.jpg" />
+    <Content Include="admin\lib\jqplot\docs\files\images\navdocs.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\navdocsover.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\navdownload.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\navdownloadover.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\navexamples.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\navexamplesover.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\navhome.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\navhomeover.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\new.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\sample3.png" />
+    <Content Include="admin\lib\jqplot\docs\files\images\samplesm.png" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-axisLabelRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-axisTickRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-canvasGridRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-core-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-divTitleRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-linearAxisRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-lineRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-markerRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-shadowRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-shapeRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-themeEngine-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqplot-toImage-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqPlotCssStyling-txt.html" />
+    <Content Include="admin\lib\jqplot\docs\files\jqPlotOptions-txt.html" />
+    <Content Include="admin\lib\jqplot\docs\files\MIT-LICENSE-txt.html" />
+    <Content Include="admin\lib\jqplot\docs\files\optionsTutorial-txt.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-barRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-BezierCurveRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-blockRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-bubbleRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-canvasAxisLabelRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-canvasAxisTickRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-canvasOverlay-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-categoryAxisRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-ciParser-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-cursor-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-dateAxisRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-donutRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-dragable-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-enhancedLegendRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-funnelRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-highlighter-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-logAxisRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-mekkoAxisRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-mekkoRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-meterGaugeRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-ohlcRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-pieRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-pointLabels-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-pyramidAxisRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-pyramidGridRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-pyramidRenderer-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\plugins\jqplot-trendline-js.html" />
+    <Content Include="admin\lib\jqplot\docs\files\usage-txt.html" />
+    <Content Include="admin\lib\jqplot\docs\index.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Classes.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Files.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Functions.html" />
+    <Content Include="admin\lib\jqplot\docs\index\General.html" />
+    <Content Include="admin\lib\jqplot\docs\index\General2.html" />
+    <Content Include="admin\lib\jqplot\docs\index\General3.html" />
+    <Content Include="admin\lib\jqplot\docs\index\General4.html" />
+    <Content Include="admin\lib\jqplot\docs\index\General5.html" />
+    <Content Include="admin\lib\jqplot\docs\index\General6.html" />
+    <Content Include="admin\lib\jqplot\docs\index\General7.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Hooks.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Properties.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Properties2.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Properties3.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Properties4.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Properties5.html" />
+    <Content Include="admin\lib\jqplot\docs\index\Properties6.html" />
+    <Content Include="admin\lib\jqplot\docs\javascript\main.js" />
+    <Content Include="admin\lib\jqplot\docs\javascript\searchdata.js" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesA.html" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesD.html" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesG.html" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesH.html" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesJ.html" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesL.html" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesS.html" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesSymbols.html" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesT.html" />
+    <Content Include="admin\lib\jqplot\docs\search\ClassesV.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FilesJ.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsC.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsD.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsG.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsI.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsM.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsN.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsQ.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsR.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsS.html" />
+    <Content Include="admin\lib\jqplot\docs\search\FunctionsZ.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralA.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralB.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralC.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralD.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralE.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralF.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralG.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralH.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralI.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralJ.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralL.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralM.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralN.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralO.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralP.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralQ.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralR.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralS.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralSymbols.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralT.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralU.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralV.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralW.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralX.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralY.html" />
+    <Content Include="admin\lib\jqplot\docs\search\GeneralZ.html" />
+    <Content Include="admin\lib\jqplot\docs\search\HooksA.html" />
+    <Content Include="admin\lib\jqplot\docs\search\HooksE.html" />
+    <Content Include="admin\lib\jqplot\docs\search\HooksJ.html" />
+    <Content Include="admin\lib\jqplot\docs\search\HooksP.html" />
+    <Content Include="admin\lib\jqplot\docs\search\NoResults.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesA.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesB.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesC.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesD.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesE.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesF.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesG.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesH.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesI.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesL.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesM.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesN.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesO.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesP.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesR.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesS.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesT.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesU.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesV.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesW.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesX.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesY.html" />
+    <Content Include="admin\lib\jqplot\docs\search\PropertiesZ.html" />
+    <Content Include="admin\lib\jqplot\docs\styles\1.css" />
+    <Content Include="admin\lib\jqplot\docs\styles\2.css" />
+    <Content Include="admin\lib\jqplot\docs\styles\main.css" />
+    <Content Include="admin\lib\jqplot\examples\ajax-loader.gif" />
+    <Content Include="admin\lib\jqplot\examples\area.html" />
+    <Content Include="admin\lib\jqplot\examples\axisLabelsRotatedText.html" />
+    <Content Include="admin\lib\jqplot\examples\axisLabelTests.html" />
+    <Content Include="admin\lib\jqplot\examples\axisScalingForceTickAt.html" />
+    <Content Include="admin\lib\jqplot\examples\bandedLine.html" />
+    <Content Include="admin\lib\jqplot\examples\bar-charts.html" />
+    <Content Include="admin\lib\jqplot\examples\barLineAnimated.html" />
+    <Content Include="admin\lib\jqplot\examples\barTest.html" />
+    <Content Include="admin\lib\jqplot\examples\bezierCurve.html" />
+    <Content Include="admin\lib\jqplot\examples\blockPlot.html" />
+    <Content Include="admin\lib\jqplot\examples\bubble-plots.html" />
+    <Content Include="admin\lib\jqplot\examples\bubbleChart.html" />
+    <Content Include="admin\lib\jqplot\examples\candlestick-charts.html" />
+    <Content Include="admin\lib\jqplot\examples\candlestick.html" />
+    <Content Include="admin\lib\jqplot\examples\canvas-overlay.html" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\images\bar-alpha.png" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\images\bar-opacity.png" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\images\bar-pointer.png" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\images\bar.png" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\images\map-opacity.png" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\images\map-pointer.png" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\images\map.png" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\images\preview-opacity.png" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\images\ui-colorpicker.png" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\index.html" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\jquery.colorpicker.css" />
+    <Content Include="admin\lib\jqplot\examples\colorpicker\jquery.colorpicker.js" />
+    <Content Include="admin\lib\jqplot\examples\cursor-highlighter.html" />
+    <Content Include="admin\lib\jqplot\examples\customHighlighterCursorTrendline.html" />
+    <Content Include="admin\lib\jqplot\examples\dashboardWidget.html" />
+    <Content Include="admin\lib\jqplot\examples\dashedLines.html" />
+    <Content Include="admin\lib\jqplot\examples\data-renderers.html" />
+    <Content Include="admin\lib\jqplot\examples\date-axes.html" />
+    <Content Include="admin\lib\jqplot\examples\dateAxisLogAxisZooming.html" />
+    <Content Include="admin\lib\jqplot\examples\dateAxisRenderer.html" />
+    <Content Include="admin\lib\jqplot\examples\example.js" />
+    <Content Include="admin\lib\jqplot\examples\example.min.js" />
+    <Content Include="admin\lib\jqplot\examples\examples.css" />
+    <Content Include="admin\lib\jqplot\examples\examples.min.css" />
+    <Content Include="admin\lib\jqplot\examples\fillBetweenLines.html" />
+    <Content Include="admin\lib\jqplot\examples\hiddenPlotsInTabs.html" />
+    <Content Include="admin\lib\jqplot\examples\images\logo.jpg" />
+    <Content Include="admin\lib\jqplot\examples\images\ui-colorpicker.png" />
+    <Content Include="admin\lib\jqplot\examples\index.html" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\jquery-ui.css" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\smoothness\jquery-ui.min.css" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\jquery-ui-1.9pre.css" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\jquery-ui-1.9pre.min.css" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\jquery-ui.css" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\css\ui-lightness\jquery-ui.min.css" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\js\jquery-ui-1.9pre.min.js" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\js\jquery-ui.js" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\js\jquery-ui.min.js" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\js\jquery.effects.blind.js" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\js\jquery.effects.blind.min.js" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\js\jquery.effects.core.js" />
+    <Content Include="admin\lib\jqplot\examples\jquery-ui\js\jquery.effects.core.min.js" />
+    <Content Include="admin\lib\jqplot\examples\jquery.print.js" />
+    <Content Include="admin\lib\jqplot\examples\jquery.printElement.min.js" />
+    <Content Include="admin\lib\jqplot\examples\jsondata.txt" />
+    <Content Include="admin\lib\jqplot\examples\kcp.print.js" />
+    <Content Include="admin\lib\jqplot\examples\kcp_area.html" />
+    <Content Include="admin\lib\jqplot\examples\kcp_area2.html" />
+    <Content Include="admin\lib\jqplot\examples\kcp_cdf.html" />
+    <Content Include="admin\lib\jqplot\examples\kcp_engel.html" />
+    <Content Include="admin\lib\jqplot\examples\kcp_lorenz.html" />
+    <Content Include="admin\lib\jqplot\examples\kcp_pdf.html" />
+    <Content Include="admin\lib\jqplot\examples\kcp_pyramid.html" />
+    <Content Include="admin\lib\jqplot\examples\kcp_pyramid2.html" />
+    <Content Include="admin\lib\jqplot\examples\kcp_pyramid_by_age.html" />
+    <Content Include="admin\lib\jqplot\examples\kcp_quintiles.html" />
+    <Content Include="admin\lib\jqplot\examples\line-charts.html" />
+    <Content Include="admin\lib\jqplot\examples\mekkoCharts.html" />
+    <Content Include="admin\lib\jqplot\examples\meritOrder.html" />
+    <Content Include="admin\lib\jqplot\examples\meterGauge.html" />
+    <Content Include="admin\lib\jqplot\examples\multipleBarColors.html" />
+    <Content Include="admin\lib\jqplot\examples\nav.inc" />
+    <Content Include="admin\lib\jqplot\examples\pie-donut-charts.html" />
+    <Content Include="admin\lib\jqplot\examples\pieTest.html" />
+    <Content Include="admin\lib\jqplot\examples\pieTest2.js" />
+    <Content Include="admin\lib\jqplot\examples\pieTest4.html" />
+    <Content Include="admin\lib\jqplot\examples\point-labels.html" />
+    <Content Include="admin\lib\jqplot\examples\resizablePlot.html" />
+    <Content Include="admin\lib\jqplot\examples\rotated-tick-labels.html" />
+    <Content Include="admin\lib\jqplot\examples\rotatedTickLabelsZoom.html" />
+    <Content Include="admin\lib\jqplot\examples\selectorSyntax.html" />
+    <Content Include="admin\lib\jqplot\examples\smoothedLine.html" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\scripts\shAutoloader.js" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\scripts\shAutoloader.min.js" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\scripts\shBrushJScript.js" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\scripts\shBrushJScript.min.js" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\scripts\shBrushXml.js" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\scripts\shBrushXml.min.js" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\scripts\shCore.js" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\scripts\shCore.min.js" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\styles\shCore.css" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\styles\shCore.min.css" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\styles\shCoreDefault.css" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\styles\shCoreDefault.min.css" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\styles\shThemeDefault.css" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\styles\shThemeDefault.min.css" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\styles\shThemejqPlot.css" />
+    <Content Include="admin\lib\jqplot\examples\syntaxhighlighter\styles\shThemejqPlot.min.css" />
+    <Content Include="admin\lib\jqplot\examples\theming.html" />
+    <Content Include="admin\lib\jqplot\examples\topbanner.inc" />
+    <Content Include="admin\lib\jqplot\examples\waterfall.html" />
+    <Content Include="admin\lib\jqplot\examples\waterfall2.html" />
+    <Content Include="admin\lib\jqplot\examples\yahooData.js" />
+    <Content Include="admin\lib\jqplot\examples\yahooData.min.js" />
+    <Content Include="admin\lib\jqplot\examples\zoom1.html" />
+    <Content Include="admin\lib\jqplot\examples\zooming.html" />
+    <Content Include="admin\lib\jqplot\examples\zoomOptions.html" />
+    <Content Include="admin\lib\jqplot\examples\zoomProxy.html" />
+    <Content Include="admin\lib\jqplot\excanvas.js" />
+    <Content Include="admin\lib\jqplot\excanvas.min.js" />
+    <Content Include="admin\lib\jqplot\gpl-2.0.txt" />
+    <Content Include="admin\lib\jqplot\jqPlotCssStyling.txt" />
+    <Content Include="admin\lib\jqplot\jqPlotOptions.txt" />
+    <Content Include="admin\lib\jqplot\jquery.jqplot.css" />
+    <Content Include="admin\lib\jqplot\jquery.jqplot.js" />
+    <Content Include="admin\lib\jqplot\jquery.jqplot.min.css" />
+    <Content Include="admin\lib\jqplot\jquery.jqplot.min.js" />
+    <Content Include="admin\lib\jqplot\jquery.js" />
+    <Content Include="admin\lib\jqplot\jquery.min.js" />
+    <Content Include="admin\lib\jqplot\MIT-LICENSE.txt" />
+    <Content Include="admin\lib\jqplot\optionsTutorial.txt" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.barRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.barRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.BezierCurveRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.BezierCurveRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.blockRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.blockRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.bubbleRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.bubbleRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.canvasAxisLabelRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.canvasAxisLabelRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.canvasAxisTickRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.canvasAxisTickRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.canvasOverlay.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.canvasOverlay.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.canvasTextRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.canvasTextRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.categoryAxisRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.categoryAxisRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.ciParser.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.ciParser.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.cursor.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.cursor.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.dateAxisRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.dateAxisRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.donutRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.donutRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.dragable.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.dragable.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.enhancedLegendRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.enhancedLegendRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.funnelRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.funnelRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.highlighter.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.highlighter.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.json2.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.json2.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.logAxisRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.logAxisRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.mekkoAxisRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.mekkoAxisRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.mekkoRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.mekkoRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.meterGaugeRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.meterGaugeRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.mobile.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.mobile.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.ohlcRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.ohlcRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pieRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pieRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pointLabels.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pointLabels.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pyramidAxisRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pyramidAxisRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pyramidGridRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pyramidGridRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pyramidRenderer.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.pyramidRenderer.min.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.trendline.js" />
+    <Content Include="admin\lib\jqplot\plugins\jqplot.trendline.min.js" />
+    <Content Include="admin\lib\jqplot\README.txt" />
+    <Content Include="admin\lib\jqplot\usage.txt" />
+    <Content Include="admin\lib\jquery-1.8.1.min.js" />
+    <Content Include="admin\login.aspx" />
+    <Content Include="admin\logout.aspx" />
+    <Content Include="admin\manage_ads.aspx" />
+    <Content Include="admin\manage_page_content.aspx" />
+    <Content Include="admin\stylesheets\elements.css" />
+    <Content Include="admin\stylesheets\myelements.css" />
+    <Content Include="admin\stylesheets\style.css" />
+    <Content Include="admin\stylesheets\theme.css" />
+    <Content Include="admin\user.html" />
+    <Content Include="admin\users.html" />
+    <Content Include="App_Data\xenith.mdf" />
+    <Content Include="App_Data\xenith_log.ldf">
+      <DependentUpon>xenith.mdf</DependentUpon>
+    </Content>
+    <Content Include="bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap\js\bootstrap-affix.js" />
+    <Content Include="bootstrap\js\bootstrap-alert.js" />
+    <Content Include="bootstrap\js\bootstrap-button.js" />
+    <Content Include="bootstrap\js\bootstrap-carousel.js" />
+    <Content Include="bootstrap\js\bootstrap-collapse.js" />
+    <Content Include="bootstrap\js\bootstrap-dropdown.js" />
+    <Content Include="bootstrap\js\bootstrap-modal.js" />
+    <Content Include="bootstrap\js\bootstrap-popover.js" />
+    <Content Include="bootstrap\js\bootstrap-scrollspy.js" />
+    <Content Include="bootstrap\js\bootstrap-tab.js" />
+    <Content Include="bootstrap\js\bootstrap-tooltip.js" />
+    <Content Include="bootstrap\js\bootstrap-transition.js" />
+    <Content Include="bootstrap\js\bootstrap-typeahead.js" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\jquery.js" />
+    <Content Include="bootstrap\js\note.txt" />
+    <Content Include="bootstrap\js\other\bootstrap.file-input.js" />
+    <Content Include="contact_us.aspx" />
+    <Content Include="create_post.aspx" />
+    <Content Include="css\jqueryui\base\images\animated-overlay.gif" />
+    <Content Include="css\jqueryui\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\jqueryui\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\jqueryui\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\jqueryui\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\jqueryui\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\jqueryui\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\jqueryui\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\jqueryui\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\jqueryui\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\jqueryui\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\jqueryui\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\jqueryui\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\jqueryui\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\jqueryui\base\jquery-ui.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.accordion.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.all.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.autocomplete.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.base.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.button.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.core.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.datepicker.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.dialog.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.menu.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.progressbar.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.resizable.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.selectable.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.slider.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.spinner.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.tabs.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.theme.css" />
+    <Content Include="css\jqueryui\base\jquery.ui.tooltip.css" />
+    <Content Include="css\jqueryui\base\minified\images\animated-overlay.gif" />
+    <Content Include="css\jqueryui\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\jqueryui\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\jqueryui\base\minified\jquery-ui.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.button.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.core.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="css\jqueryui\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="css\jqueryui\smoothness\images\animated-overlay.gif" />
+    <Content Include="css\jqueryui\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\jquery-ui.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.accordion.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.all.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.autocomplete.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.base.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.button.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.core.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.datepicker.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.dialog.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.menu.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.progressbar.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.resizable.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.selectable.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.slider.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.spinner.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.tabs.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.theme.css" />
+    <Content Include="css\jqueryui\smoothness\jquery.ui.tooltip.css" />
+    <Content Include="css\jqueryui\smoothness\minified\images\animated-overlay.gif" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery-ui.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.accordion.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.button.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.core.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.dialog.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.menu.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.resizable.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.selectable.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.slider.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.spinner.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.tabs.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.theme.min.css" />
+    <Content Include="css\jqueryui\smoothness\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="currency_converter.aspx" />
+    <Content Include="entertainment.aspx" />
+    <Content Include="explore_the_city.aspx" />
+    <Content Include="explore_the_hotel.aspx" />
+    <Content Include="images\logo1.png" />
+    <Content Include="index.aspx" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery-migrate-1.2.1.js" />
+    <Content Include="js\jqueryui\i18n\jquery-ui-i18n.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ar-DZ.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-be.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-cy-GB.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-en-AU.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-en-NZ.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-fr-CA.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-hi.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ka.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-kk.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-km.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ky.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-lb.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-mk.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ml.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-nb.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-nl-BE.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-nn.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-rm.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-tj.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="js\jqueryui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="js\jqueryui\jquery-ui.custom.js" />
+    <Content Include="js\jqueryui\jquery.ui.accordion.js" />
+    <Content Include="js\jqueryui\jquery.ui.autocomplete.js" />
+    <Content Include="js\jqueryui\jquery.ui.button.js" />
+    <Content Include="js\jqueryui\jquery.ui.core.js" />
+    <Content Include="js\jqueryui\jquery.ui.datepicker.js" />
+    <Content Include="js\jqueryui\jquery.ui.dialog.js" />
+    <Content Include="js\jqueryui\jquery.ui.draggable.js" />
+    <Content Include="js\jqueryui\jquery.ui.droppable.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-blind.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-bounce.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-clip.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-drop.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-explode.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-fade.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-fold.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-highlight.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-pulsate.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-scale.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-shake.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-slide.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect-transfer.js" />
+    <Content Include="js\jqueryui\jquery.ui.effect.js" />
+    <Content Include="js\jqueryui\jquery.ui.menu.js" />
+    <Content Include="js\jqueryui\jquery.ui.mouse.js" />
+    <Content Include="js\jqueryui\jquery.ui.position.js" />
+    <Content Include="js\jqueryui\jquery.ui.progressbar.js" />
+    <Content Include="js\jqueryui\jquery.ui.resizable.js" />
+    <Content Include="js\jqueryui\jquery.ui.selectable.js" />
+    <Content Include="js\jqueryui\jquery.ui.slider.js" />
+    <Content Include="js\jqueryui\jquery.ui.sortable.js" />
+    <Content Include="js\jqueryui\jquery.ui.spinner.js" />
+    <Content Include="js\jqueryui\jquery.ui.tabs.js" />
+    <Content Include="js\jqueryui\jquery.ui.tooltip.js" />
+    <Content Include="js\jqueryui\jquery.ui.widget.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery-ui-i18n.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-af.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ar-DZ.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ar.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-az.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-be.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-bg.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-bs.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ca.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-cs.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-cy-GB.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-da.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-de.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-el.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-en-AU.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-en-GB.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-en-NZ.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-eo.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-es.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-et.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-eu.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-fa.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-fi.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-fo.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-fr-CA.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-fr-CH.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-fr.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-gl.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-he.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-hi.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-hr.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-hu.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-hy.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-id.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-is.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-it.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ja.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ka.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-kk.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-km.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ko.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ky.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-lb.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-lt.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-lv.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-mk.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ml.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ms.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-nb.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-nl-BE.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-nl.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-nn.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-no.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-pl.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-pt-BR.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-pt.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-rm.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ro.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ru.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-sk.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-sl.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-sq.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-sr-SR.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-sr.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-sv.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-ta.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-th.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-tj.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-tr.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-uk.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-vi.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-zh-CN.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-zh-HK.min.js" />
+    <Content Include="js\jqueryui\minified\i18n\jquery.ui.datepicker-zh-TW.min.js" />
+    <Content Include="js\jqueryui\minified\jquery-ui.custom.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.button.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.core.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-blind.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-bounce.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-clip.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-drop.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-explode.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-fade.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-fold.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-highlight.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-pulsate.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-scale.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-shake.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-slide.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect-transfer.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.effect.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.menu.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.position.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.slider.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.spinner.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.tooltip.min.js" />
+    <Content Include="js\jqueryui\minified\jquery.ui.widget.min.js" />
+    <Content Include="js\timepicker\GruntFile.js" />
+    <Content Include="js\timepicker\index.html" />
+    <Content Include="js\timepicker\jquery.timepicker.css" />
+    <Content Include="js\timepicker\jquery.timepicker.js" />
+    <Content Include="js\timepicker\jquery.timepicker.min.js" />
+    <Content Include="js\timepicker\lib\base.css" />
+    <Content Include="js\timepicker\lib\base.js" />
+    <Content Include="js\timepicker\lib\datepair.js" />
+    <Content Include="js\timepicker\lib\glyphicons-halflings.png" />
+    <Content Include="js\timepicker\lib\screenshot.png" />
+    <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="menu_source\cssmenu_style.css" />
+    <Content Include="menu_source\images\hover.png" />
+    <Content Include="menu_source\images\hover_sub.png" />
+    <Content Include="menu_source\images\seperator.gif" />
+    <Content Include="menu_source\images\sub_sep.gif" />
+    <Content Include="menu_source\index.html" />
+    <Content Include="misc\playlist1.xml" />
+    <Content Include="order_cab.aspx" />
+    <Content Include="order_cab_done.aspx" />
+    <Content Include="order_cab_process.aspx" />
+    <Content Include="osmplayer-2.x\bin\osmplayer.compressed.js" />
+    <Content Include="osmplayer-2.x\bin\osmplayer.js" />
+    <Content Include="osmplayer-2.x\doc\files.html" />
+    <Content Include="osmplayer-2.x\doc\index.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\jQuery.fn.minplayer.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\jQuery.fn.osmplayer.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.async.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.compatibility.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.display.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.file.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.flags.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.image.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.players.base.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.players.flash.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.players.html5.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.players.kaltura.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.players.limelight.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.players.minplayer.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.players.vimeo.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.players.youtube.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\minplayer.plugin.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\osmplayer.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\osmplayer.pager.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\osmplayer.playlist.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\osmplayer.scroll.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\osmplayer.teaser.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.async.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.compatibility.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.controller.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.display.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.file.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.flags.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.image.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.players.base.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.players.flash.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.players.html5.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.players.kaltura.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.players.limelight.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.players.minplayer.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.players.vimeo.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.players.youtube.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.playLoader.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\minplayer_src_minplayer.plugin.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.pager.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.parser.asx.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.parser.default.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.parser.rss.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.parser.xspf.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.parser.youtube.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.playlist.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.scroll.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\src\src_osmplayer.teaser.js.html" />
+    <Content Include="osmplayer-2.x\doc\symbols\_global_.html" />
+    <Content Include="osmplayer-2.x\index.html" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\absolution.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\ajax-loader.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\ajax-loader.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\corner.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\icons-18-black.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\icons-18-white.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\icons-36-black.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\icons-36-white.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\selector.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\ui-icons_222222_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\absolution\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\Aristo\Aristo.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\Aristo\images\bg_fallback.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\Aristo\images\icon_sprite.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\Aristo\images\progress_bar.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\Aristo\images\slider_handles.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\Aristo\images\ui-icons_222222_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\Aristo\images\ui-icons_454545_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-bg_diagonals-thick_8_333333_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-bg_glass_40_111111_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-bg_glass_55_1c1c1c_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-bg_inset-hard_55_ffeb80_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-icons_222222_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-icons_4ca300_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-icons_ededed_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-icons_ffcf29_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\black-tie\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-bg_flat_0_333333_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-bg_highlight-soft_15_cc0000_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-icons_004276_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\blitzer\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\cupertino\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-bg_highlight-hard_20_0972a5_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-bg_highlight-soft_33_003147_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-bg_highlight-soft_35_222222_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-bg_highlight-soft_44_444444_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-bg_loop_25_000000_21x21.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-icons_222222_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-icons_a83300_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\dark-hive\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-bg_diagonals-thick_15_0b3e6f_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-bg_dots-medium_30_0b58a2_4x4.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-bg_dots-small_20_333333_2x2.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-bg_dots-small_30_a32d00_2x2.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-bg_dots-small_40_00498f_2x2.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-bg_flat_40_292929_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-bg_gloss-wave_20_111111_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-icons_00498f_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-icons_98d2fb_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-icons_9ccdfc_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\dot-luv\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-bg_flat_55_994d53_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-bg_flat_55_fafafa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-bg_gloss-wave_30_3d3644_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-bg_highlight-soft_100_dcd9de_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-bg_highlight-soft_100_eae6ea_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-bg_highlight-soft_25_30273a_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-bg_highlight-soft_45_5f5964_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-icons_454545_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-icons_734d99_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-icons_8d78a5_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-icons_a8a3ae_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-icons_ebccce_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\eggplant\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-bg_diagonals-small_25_c5ddfc_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-bg_diagonals-thick_20_e69700_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-bg_diagonals-thick_22_1484e6_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-bg_diagonals-thick_26_2293f7_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-bg_flat_0_e69700_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-bg_flat_0_e6b900_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-bg_highlight-soft_100_f9f9f9_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-bg_inset-hard_100_eeeeee_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-icons_0a82eb_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-icons_0b54d5_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-icons_5fa5e3_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-icons_fcdd4a_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\excite-bike\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-bg_flat_55_ffffff_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-icons_454545_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-icons_666666_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-icons_ff0084_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\flick\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-bg_diagonals-small_40_db4865_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-bg_diagonals-small_50_93c3cd_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-bg_diagonals-small_50_ff3853_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-bg_diagonals-small_75_ccd232_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-bg_dots-medium_80_ffff38_4x4.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-bg_dots-small_35_35414f_2x2.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-bg_flat_75_ba9217_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-bg_white-lines_85_f7f7ba_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-icons_454545_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-icons_88a206_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-icons_c02669_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-icons_e1e463_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-icons_ffeb33_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\hot-sneaks\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-bg_glass_100_f5f0e5_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-bg_glass_25_cb842e_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-bg_glass_70_ede4d4_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-bg_highlight-hard_100_f4f0ec_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-bg_highlight-hard_75_f5f5b5_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-bg_inset-soft_100_f4f0ec_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-icons_c47a23_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-icons_cb672b_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-icons_f08000_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-icons_f35f07_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-icons_ff7519_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\humanity\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-bg_glass_15_5f391b_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-bg_gloss-wave_20_1c160d_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-bg_gloss-wave_25_453326_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-bg_gloss-wave_30_44372c_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-bg_highlight-soft_20_201913_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-bg_highlight-soft_20_619226_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-bg_inset-soft_10_201913_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-icons_222222_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-icons_9bcc60_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-icons_add978_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-icons_e3ddc9_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-icons_f1fd86_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\mint-choc\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-icons_3383bb_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-icons_454545_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-icons_70b2e1_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-icons_999999_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\images\ui-icons_fbc856_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\overcast\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-bg_diagonal-maze_40_000000_10x10.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-bg_fine-grain_10_eceadf_60x60.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-bg_fine-grain_10_f8f7f6_60x60.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-bg_fine-grain_15_eceadf_60x60.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-bg_fine-grain_15_f7f3de_60x60.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-bg_fine-grain_15_ffffff_60x60.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-bg_fine-grain_65_654b24_60x60.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-bg_fine-grain_68_b83400_60x60.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-icons_222222_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-icons_3572ac_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-icons_8c291d_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-icons_b83400_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-icons_fbdb93_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\pepper-grinder\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\redmond\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\smoothness\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-icons_808080_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-icons_847e71_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-icons_8DC262_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\south-street\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-icons_056b93_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\start\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-icons_d19405_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\sunny\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-bg_diamond_10_4f4221_10x8.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-bg_diamond_20_372806_10x8.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-bg_diamond_25_675423_10x8.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-bg_diamond_25_d5ac5d_10x8.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-bg_diamond_8_261803_10x8.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-bg_diamond_8_443113_10x8.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-bg_flat_75_ddd4b0_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-icons_070603_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-icons_e8e2b5_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-icons_e9cd86_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-icons_efec9f_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-icons_f2ec64_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-icons_f9f2bd_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\images\ui-icons_ff7519_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\swanky-purse\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-bg_diagonals-small_50_262626_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-bg_flat_0_303030_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-bg_flat_0_4c4c4c_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-bg_glass_40_0a0a0a_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-bg_glass_55_f1fbe5_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-bg_glass_60_000000_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-bg_gloss-wave_55_000000_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-bg_gloss-wave_85_9fda58_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-bg_gloss-wave_95_f6ecd5_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-icons_000000_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-icons_1f1f1f_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-icons_9fda58_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-icons_b8ec79_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\trontastic\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-icons_222222_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-icons_a83300_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-darkness\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\ui-lightness\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\animated-overlay.gif" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-bg_gloss-wave_16_121212_500x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-bg_highlight-hard_15_888888_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-bg_highlight-hard_55_555555_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-bg_highlight-soft_35_adadad_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-bg_highlight-soft_60_dddddd_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-bg_inset-soft_15_121212_1x100.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-icons_666666_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-icons_aaaaaa_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-icons_c98000_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\images\ui-icons_f29a00_256x240.png" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\jquery-ui-1.8.18.custom.css" />
+    <Content Include="osmplayer-2.x\jquery-ui\vader\jquery-ui.css" />
+    <Content Include="osmplayer-2.x\LICENSE.TXT" />
+    <Content Include="osmplayer-2.x\logo.png" />
+    <Content Include="osmplayer-2.x\minplayer\bin\minplayer.compressed.js" />
+    <Content Include="osmplayer-2.x\minplayer\bin\minplayer.js" />
+    <Content Include="osmplayer-2.x\minplayer\doc\files.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\index.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\jQuery.fn.minplayer.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.async.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.compatibility.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.controller.base.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.controllers.base.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.display.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.file.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.flags.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.image.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.players.base.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.players.dailymotion.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.players.flash.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.players.html5.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.players.kaltura.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.players.limelight.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.players.minplayer.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.players.vimeo.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.players.youtube.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.playLoader.base.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.plugin.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\minplayer.templates.base.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.async.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.compatibility.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.controller.base.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.controller.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.controllers.base.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.display.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.file.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.flags.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.image.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.players.base.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.players.dailymotion.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.players.flash.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.players.html5.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.players.kaltura.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.players.limelight.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.players.minplayer.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.players.vimeo.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.players.youtube.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.playLoader.base.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.playLoader.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.plugin.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\src\src_minplayer.templates.base.js.html" />
+    <Content Include="osmplayer-2.x\minplayer\doc\symbols\_global_.html" />
+    <Content Include="osmplayer-2.x\minplayer\flash\config\config.xml" />
+    <Content Include="osmplayer-2.x\minplayer\flash\config\nocontrols.xml" />
+    <Content Include="osmplayer-2.x\minplayer\flash\LICENSE.txt" />
+    <Content Include="osmplayer-2.x\minplayer\flash\minplayer.swf" />
+    <Content Include="osmplayer-2.x\minplayer\flash\README.txt" />
+    <Content Include="osmplayer-2.x\minplayer\flash\skins\default\controlBar.swf" />
+    <Content Include="osmplayer-2.x\minplayer\flash\skins\default\mediaPlayer.swf" />
+    <Content Include="osmplayer-2.x\minplayer\flash\skins\default\playLoader.swf" />
+    <Content Include="osmplayer-2.x\minplayer\images\bg_hr.png" />
+    <Content Include="osmplayer-2.x\minplayer\images\blacktocat.png" />
+    <Content Include="osmplayer-2.x\minplayer\images\icon_download.png" />
+    <Content Include="osmplayer-2.x\minplayer\images\sprite_download.png" />
+    <Content Include="osmplayer-2.x\minplayer\index.html" />
+    <Content Include="osmplayer-2.x\minplayer\javascripts\main.js" />
+    <Content Include="osmplayer-2.x\minplayer\LICENSE.TXT" />
+    <Content Include="osmplayer-2.x\minplayer\plugins\timeline_indicator\css\timeline_indicator.css" />
+    <Content Include="osmplayer-2.x\minplayer\plugins\timeline_indicator\js\timeline_indicator.js" />
+    <Content Include="osmplayer-2.x\minplayer\plugins\timeline_indicator\timeline_indicator.png" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.async.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.compatibility.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.controller.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.display.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.file.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.flags.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.image.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.players.base.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.players.dailymotion.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.players.flash.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.players.html5.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.players.kaltura.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.players.limelight.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.players.minplayer.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.players.vimeo.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.players.youtube.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.playLoader.js" />
+    <Content Include="osmplayer-2.x\minplayer\src\minplayer.plugin.js" />
+    <Content Include="osmplayer-2.x\minplayer\stylesheets\pygment_trac.css" />
+    <Content Include="osmplayer-2.x\minplayer\stylesheets\stylesheet.css" />
+    <Content Include="osmplayer-2.x\minplayer\templates\default\css\images\loader.gif" />
+    <Content Include="osmplayer-2.x\minplayer\templates\default\css\images\pause-icon.png" />
+    <Content Include="osmplayer-2.x\minplayer\templates\default\css\images\play-icon.png" />
+    <Content Include="osmplayer-2.x\minplayer\templates\default\css\images\volume-full-icon.png" />
+    <Content Include="osmplayer-2.x\minplayer\templates\default\css\images\volume-mute-icon.png" />
+    <Content Include="osmplayer-2.x\minplayer\templates\default\css\minplayer_default.css" />
+    <Content Include="osmplayer-2.x\minplayer\templates\default\js\minplayer.controller.default.js" />
+    <Content Include="osmplayer-2.x\minplayer\templates\default\js\minplayer.default.js" />
+    <Content Include="osmplayer-2.x\minplayer\templates\default\js\minplayer.playLoader.default.js" />
+    <Content Include="osmplayer-2.x\minplayer\templates\jqueryui\css\images\loader.gif" />
+    <Content Include="osmplayer-2.x\minplayer\templates\jqueryui\css\minplayer_jqueryui.css" />
+    <Content Include="osmplayer-2.x\minplayer\templates\jqueryui\js\minplayer.controller.jqueryui.js" />
+    <Content Include="osmplayer-2.x\minplayer\templates\jqueryui\js\minplayer.jqueryui.js" />
+    <Content Include="osmplayer-2.x\minplayer\templates\jqueryui\js\minplayer.playLoader.jqueryui.js" />
+    <Content Include="osmplayer-2.x\playlist.xml" />
+    <Content Include="osmplayer-2.x\playlist1.xml" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\carousel\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\check-dom-changes\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\custom-scrollbar\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\custom-scrollbar\scrollbar.css" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\ender\ender.js" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\ender\ender.min.js" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\ender\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\form-fields\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\horizontal-scroll\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\hover\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\ios-perfect-scrollbar\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\ios-perfect-scrollbar\scrollbar.css" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\ios-perfect-scrollbar\scrollbar.png" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\ipad\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\lite\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\pull-to-refresh\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\pull-to-refresh\pull-icon%402x.png" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\simple\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\snap-to-element\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\use-transition\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\zoom\index.html" />
+    <Content Include="osmplayer-2.x\src\iscroll\examples\zoom\iscroll.jpg" />
+    <Content Include="osmplayer-2.x\src\iscroll\license.txt" />
+    <Content Include="osmplayer-2.x\src\iscroll\src\ender.js" />
+    <Content Include="osmplayer-2.x\src\iscroll\src\iscroll-lite.js" />
+    <Content Include="osmplayer-2.x\src\iscroll\src\iscroll.js" />
+    <Content Include="osmplayer-2.x\src\osmplayer.js" />
+    <Content Include="osmplayer-2.x\src\osmplayer.pager.js" />
+    <Content Include="osmplayer-2.x\src\osmplayer.parser.asx.js" />
+    <Content Include="osmplayer-2.x\src\osmplayer.parser.default.js" />
+    <Content Include="osmplayer-2.x\src\osmplayer.parser.rss.js" />
+    <Content Include="osmplayer-2.x\src\osmplayer.parser.xspf.js" />
+    <Content Include="osmplayer-2.x\src\osmplayer.parser.youtube.js" />
+    <Content Include="osmplayer-2.x\src\osmplayer.playlist.js" />
+    <Content Include="osmplayer-2.x\src\osmplayer.teaser.js" />
+    <Content Include="osmplayer-2.x\templates\default\css\images\loader.gif" />
+    <Content Include="osmplayer-2.x\templates\default\css\osmplayer_default.css" />
+    <Content Include="osmplayer-2.x\templates\default\js\osmplayer.controller.default.js" />
+    <Content Include="osmplayer-2.x\templates\default\js\osmplayer.default.js" />
+    <Content Include="osmplayer-2.x\templates\default\js\osmplayer.pager.default.js" />
+    <Content Include="osmplayer-2.x\templates\default\js\osmplayer.playlist.default.js" />
+    <Content Include="osmplayer-2.x\templates\default\js\osmplayer.playLoader.default.js" />
+    <Content Include="osmplayer-2.x\templates\default\js\osmplayer.teaser.default.js" />
+    <Content Include="osmplayer-2.x\templates\default\osmplayer.default.js" />
+    <Content Include="osmplayer-2.x\templates\electric\css\images\loader.gif" />
+    <Content Include="osmplayer-2.x\templates\electric\css\images\pause-icon.png" />
+    <Content Include="osmplayer-2.x\templates\electric\css\images\play-icon.png" />
+    <Content Include="osmplayer-2.x\templates\electric\css\images\volume-full-icon.png" />
+    <Content Include="osmplayer-2.x\templates\electric\css\images\volume-mute-icon.png" />
+    <Content Include="osmplayer-2.x\templates\electric\css\osmplayer_electric.css" />
+    <Content Include="osmplayer-2.x\templates\electric\js\osmplayer.controller.electric.js" />
+    <Content Include="osmplayer-2.x\templates\electric\js\osmplayer.electric.js" />
+    <Content Include="osmplayer-2.x\templates\electric\js\osmplayer.playLoader.electric.js" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\busy.gif" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mask.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_audioslidebarbg.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_back.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_bigplay.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_black40.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_blue20.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_buttonaudioslidebar.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_buttoncontroler.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_buttoninfo.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_buttonpause.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_buttonplay.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_buttonresizescreen.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_buttonsound.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_close.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_controlerbarBg.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_forward.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_infobox.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_logo.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_movie640x360.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_moviethumb.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_playlistbg.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_playlistshadow.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\images\mediafront_playlisttitlebg.png" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\css\osmplayer_simpleblack.css" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\js\osmplayer.controller.simpleblack.js" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\js\osmplayer.playLoader.simpleblack.js" />
+    <Content Include="osmplayer-2.x\templates\simpleblack\js\osmplayer.simpleblack.js" />
+    <Content Include="osmplayer-2.x\uploads\sample.jpg" />
+    <Content Include="osmplayer-2.x\uploads\sample.mp4" />
+    <Content Include="osmplayer-2.x\version.txt" />
+    <Content Include="public_transportation.aspx" />
+    <Content Include="room_service.aspx" />
+    <Content Include="send_feedback.aspx" />
+    <Content Include="slider_camera\css\camera.css" />
+    <Content Include="slider_camera\css\_notes\dwsync.xml" />
+    <Content Include="slider_camera\demo\basic.htm" />
+    <Content Include="slider_camera\demo\features.htm" />
+    <Content Include="slider_camera\demo\fullscreen.htm" />
+    <Content Include="slider_camera\demo\_notes\dwsync.xml" />
+    <Content Include="slider_camera\images\blank.gif" />
+    <Content Include="slider_camera\images\camera-loader.gif" />
+    <Content Include="slider_camera\images\camera_skins.png" />
+    <Content Include="slider_camera\images\patterns\overlay1.png" />
+    <Content Include="slider_camera\images\patterns\overlay10.png" />
+    <Content Include="slider_camera\images\patterns\overlay2.png" />
+    <Content Include="slider_camera\images\patterns\overlay3.png" />
+    <Content Include="slider_camera\images\patterns\overlay4.png" />
+    <Content Include="slider_camera\images\patterns\overlay5.png" />
+    <Content Include="slider_camera\images\patterns\overlay6.png" />
+    <Content Include="slider_camera\images\patterns\overlay7.png" />
+    <Content Include="slider_camera\images\patterns\overlay8.png" />
+    <Content Include="slider_camera\images\patterns\overlay9.png" />
+    <Content Include="slider_camera\images\patterns\_notes\dwsync.xml" />
+    <Content Include="slider_camera\images\slides\bridge.jpg" />
+    <Content Include="slider_camera\images\slides\hotel01.jpg" />
+    <Content Include="slider_camera\images\slides\hotel02.jpg" />
+    <Content Include="slider_camera\images\slides\hotel03.jpg" />
+    <Content Include="slider_camera\images\slides\hotel04.jpg" />
+    <Content Include="slider_camera\images\slides\hotel05.jpg" />
+    <Content Include="slider_camera\images\slides\hotel06.jpg" />
+    <Content Include="slider_camera\images\slides\hotel07.jpg" />
+    <Content Include="slider_camera\images\slides\hotel08.jpg" />
+    <Content Include="slider_camera\images\slides\hotel09.jpg" />
+    <Content Include="slider_camera\images\slides\hotel10.jpg" />
+    <Content Include="slider_camera\images\slides\thumbs\header_bg.png" />
+    <Content Include="slider_camera\images\slides\thumbs\_notes\dwsync.xml" />
+    <Content Include="slider_camera\images\slides\_notes\dwsync.xml" />
+    <Content Include="slider_camera\images\_notes\dwsync.xml" />
+    <Content Include="slider_camera\scripts\camera.js" />
+    <Content Include="slider_camera\scripts\camera.min.js" />
+    <Content Include="slider_camera\scripts\jquery.easing.1.3.js" />
+    <Content Include="slider_camera\scripts\jquery.min.js" />
+    <Content Include="slider_camera\scripts\jquery.mobile.customized.min.js" />
+    <Content Include="slider_camera\scripts\_notes\dwsync.xml" />
+    <Content Include="uploads\ads\ad1.png" />
+    <Content Include="uploads\ads\ad2.png" />
+    <Content Include="uploads\ads\ad3.png" />
+    <Content Include="uploads\ads\ad4.png" />
+    <Content Include="uploads\sample.jpg" />
+    <Content Include="uploads\sample.mp4" />
+    <Content Include="uploads\sample2.jpg" />
+    <Content Include="uploads\sample2.mp4" />
+    <Content Include="view_post.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manage_ads.aspx.cs">
+      <DependentUpon>manage_ads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manage_ads.aspx.designer.cs">
+      <DependentUpon>manage_ads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manage_page_content.aspx.cs">
+      <DependentUpon>manage_page_content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manage_page_content.aspx.designer.cs">
+      <DependentUpon>manage_page_content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XenithAdmin.Master.cs">
+      <DependentUpon>XenithAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XenithAdmin.Master.designer.cs">
+      <DependentUpon>XenithAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="contact_us.aspx.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_us.aspx.designer.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="create_post.aspx.cs">
+      <DependentUpon>create_post.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="create_post.aspx.designer.cs">
+      <DependentUpon>create_post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="currency_converter.aspx.cs">
+      <DependentUpon>currency_converter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="currency_converter.aspx.designer.cs">
+      <DependentUpon>currency_converter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="entertainment.aspx.cs">
+      <DependentUpon>entertainment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="entertainment.aspx.designer.cs">
+      <DependentUpon>entertainment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="explore_the_city.aspx.cs">
+      <DependentUpon>explore_the_city.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="explore_the_city.aspx.designer.cs">
+      <DependentUpon>explore_the_city.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="explore_the_hotel.aspx.cs">
+      <DependentUpon>explore_the_hotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="explore_the_hotel.aspx.designer.cs">
+      <DependentUpon>explore_the_hotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order_cab.aspx.cs">
+      <DependentUpon>order_cab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order_cab.aspx.designer.cs">
+      <DependentUpon>order_cab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order_cab_done.aspx.cs">
+      <DependentUpon>order_cab_done.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order_cab_done.aspx.designer.cs">
+      <DependentUpon>order_cab_done.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order_cab_process.aspx.cs">
+      <DependentUpon>order_cab_process.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order_cab_process.aspx.designer.cs">
+      <DependentUpon>order_cab_process.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="public_transportation.aspx.cs">
+      <DependentUpon>public_transportation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public_transportation.aspx.designer.cs">
+      <DependentUpon>public_transportation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="room_service.aspx.cs">
+      <DependentUpon>room_service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="room_service.aspx.designer.cs">
+      <DependentUpon>room_service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="send_feedback.aspx.cs">
+      <DependentUpon>send_feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="send_feedback.aspx.designer.cs">
+      <DependentUpon>send_feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_post.aspx.cs">
+      <DependentUpon>view_post.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view_post.aspx.designer.cs">
+      <DependentUpon>view_post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forum.aspx.cs">
+      <DependentUpon>forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forum.aspx.designer.cs">
+      <DependentUpon>forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xenith.Master.cs">
+      <DependentUpon>Xenith.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xenith.Master.designer.cs">
+      <DependentUpon>Xenith.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="forum.aspx" />
+    <Content Include="Xenith.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="admin\lib\.DS_Store" />
+    <None Include="admin\lib\font-awesome\.gitignore" />
+    <None Include="admin\lib\font-awesome\docs\assets\font\fontawesome-webfont.eot" />
+    <None Include="admin\lib\font-awesome\docs\assets\font\fontawesome-webfont.ttf" />
+    <None Include="admin\lib\font-awesome\docs\assets\font\fontawesome-webfont.woff" />
+    <None Include="admin\lib\font-awesome\docs\assets\font\museo_slab_300-webfont.eot" />
+    <None Include="admin\lib\font-awesome\docs\assets\font\museo_slab_300-webfont.ttf" />
+    <None Include="admin\lib\font-awesome\docs\assets\font\museo_slab_500-webfont.eot" />
+    <None Include="admin\lib\font-awesome\docs\assets\font\museo_slab_500-webfont.ttf" />
+    <None Include="admin\lib\font-awesome\docs\assets\font\proximanova-webfont.eot" />
+    <None Include="admin\lib\font-awesome\docs\assets\font\proximanova-webfont.ttf" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\font-awesome-ie7.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\font-awesome.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\font-site.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\mixins.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\site.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\accordion.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\alerts.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\bootstrap.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\breadcrumbs.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\button-groups.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\buttons.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\carousel.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\close.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\code.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\component-animations.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\dropdowns.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\forms.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\grid.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\hero-unit.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\labels-badges.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\layouts.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\mixins.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\modals.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\navbar.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\navs.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\pager.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\pagination.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\popovers.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\progress-bars.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\reset.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\responsive-1200px-min.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\responsive-767px-max.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\responsive-768px-979px.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\responsive-navbar.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\responsive-utilities.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\responsive.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\scaffolding.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\sprites.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\tables.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\thumbnails.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\tooltip.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\type.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\utilities.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\variables.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\twbs-203\wells.less" />
+    <None Include="admin\lib\font-awesome\docs\assets\less\variables.less" />
+    <None Include="admin\lib\font-awesome\FontAwesome-Vectors.pdf" />
+    <None Include="admin\lib\font-awesome\FontAwesome.ttf" />
+    <None Include="admin\lib\font-awesome\font\fontawesome-webfont.eot" />
+    <None Include="admin\lib\font-awesome\font\fontawesome-webfont.ttf" />
+    <None Include="admin\lib\font-awesome\font\fontawesome-webfont.woff" />
+    <None Include="admin\lib\font-awesome\less\font-awesome-ie7.less" />
+    <None Include="admin\lib\font-awesome\less\font-awesome.less" />
+    <None Include="admin\lib\font-awesome\README.md" />
+    <None Include="admin\lib\font-awesome\sass\font-awesome.sass" />
+    <None Include="admin\lib\font-awesome\sass\font-awesome.scss" />
+    <None Include="admin\lib\fullcalendar-1.5.3\demos\json-events.php" />
+    <None Include="admin\lib\jqplot\.DS_Store" />
+    <None Include="admin\lib\jqplot\examples\ages.json" />
+    <None Include="admin\lib\jqplot\examples\ages.json.bak" />
+    <None Include="admin\lib\jqplot\examples\colorpicker\README" />
+    <None Include="admin\lib\jqplot\examples\colorpicker\TODO" />
+    <None Include="admin\lib\jqplot\examples\KCPsample4.csv" />
+    <None Include="admin\lib\jqplot\examples\kcp_area2.json" />
+    <None Include="admin\lib\jqplot\examples\kcp_pyramid_by_age.php" />
+    <None Include="admin\lib\jqplot\examples\mekkoCharts.php.orig" />
+    <None Include="admin\lib\jqplot\examples\quintiles.json" />
+    <None Include="admin\lib\jqplot\examples\resizablePlot.php.orig" />
+    <None Include="admin\lib\jqplot\examples\syntaxhighlighter\LGPL-LICENSE" />
+    <None Include="admin\lib\jqplot\examples\syntaxhighlighter\MIT-LICENSE" />
+    <Content Include="admin\XenithAdmin.Master" />
+    <None Include="js\timepicker\.gitignore" />
+    <None Include="js\timepicker\component.json" />
+    <None Include="js\timepicker\jt.timepicker.jquery.json" />
+    <None Include="js\timepicker\package.json" />
+    <None Include="js\timepicker\README.md" />
+    <None Include="osmplayer-2.x\.gitignore" />
+    <None Include="osmplayer-2.x\jquery-ui\README.md" />
+    <None Include="osmplayer-2.x\makefile" />
+    <None Include="osmplayer-2.x\minplayer\.gitignore" />
+    <None Include="osmplayer-2.x\minplayer\makefile" />
+    <None Include="osmplayer-2.x\minplayer\params.json" />
+    <None Include="osmplayer-2.x\minplayer\plugins\timeline_indicator\README.md" />
+    <None Include="osmplayer-2.x\minplayer\plugins\timeline_indicator\timeline_indicator.info" />
+    <None Include="osmplayer-2.x\minplayer\README.md" />
+    <None Include="osmplayer-2.x\minplayer\templates\default\minplayer_default.tpl.php" />
+    <None Include="osmplayer-2.x\minplayer\templates\jqueryui\minplayer_jqueryui.tpl.php" />
+    <None Include="osmplayer-2.x\minplayer\tools\README.md" />
+    <None Include="osmplayer-2.x\README.md" />
+    <None Include="osmplayer-2.x\src\iscroll\.gitignore" />
+    <None Include="osmplayer-2.x\src\iscroll\bin\make-dist" />
+    <None Include="osmplayer-2.x\src\iscroll\package.json" />
+    <None Include="osmplayer-2.x\src\iscroll\README.md" />
+    <None Include="osmplayer-2.x\templates\default\osmplayer_default.tpl.php" />
+    <None Include="osmplayer-2.x\templates\electric\osmplayer_electric.tpl.php" />
+    <None Include="osmplayer-2.x\templates\simpleblack\osmplayer_simpleblack.tpl.php" />
+    <None Include="osmplayer-2.x\tools\README.md" />
+    <None Include="slider_camera\demo\random.php" />
+    <None Include="slider_camera\__MACOSX\demo\._random.php" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55375</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
