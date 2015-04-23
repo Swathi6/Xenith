@@ -1,0 +1,46 @@
+8
+
+dir
+30
+https://innovationxtreme.svn.cloudforge.com/xenithproj/Xenith/Xenith/osmplayer-2.x/templates/electric
+https://innovationxtreme.svn.cloudforge.com/xenithproj
+
+
+
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a28ecf39-8f40-47a2-b730-172ac8bc858f
+
+css
+dir
+
+osmplayer_electric.tpl.php
+file
+
+
+
+
+2013-12-11T00:30:44.392747Z
+c5d176a7c3a43700afc9a6faa140cc8c
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+js
+dir
+

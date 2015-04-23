@@ -1,0 +1,161 @@
+8
+
+dir
+30
+https://innovationxtreme.svn.cloudforge.com/xenithproj/Xenith/Xenith/osmplayer-2.x
+https://innovationxtreme.svn.cloudforge.com/xenithproj
+
+
+
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a28ecf39-8f40-47a2-b730-172ac8bc858f
+
+playlist1.xml
+file
+
+
+
+
+2013-12-11T00:30:53.390262Z
+77c78f4ddcf7822ddb58519fba363f57
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+logo.png
+file
+
+
+
+
+2013-12-11T00:30:53.395262Z
+2bfc9e564057531e10299ad3923ad3c3
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+has-props
+
+src
+dir
+
+jquery-ui
+dir
+
+README.md
+file
+
+
+
+
+2013-12-11T00:30:53.398262Z
+296c4477894c1fb867f515cf78be83f2
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+templates
+dir
+
+minplayer
+dir
+
+tools
+dir
+
+LICENSE.TXT
+file
+
+
+
+
+2013-12-11T00:30:53.402262Z
+ddb66692b2fed8817e1d547fbfa1dd63
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+playlist.xml
+file
+
+
+
+
+2013-12-11T00:30:53.406263Z
+02ad074e46e751696123246acbc89632
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+version.txt
+file
+
+
+
+
+2013-12-11T00:30:53.409263Z
+8cbd5312abfd09a095ed4321a57806a5
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+doc
+dir
+
+.gitignore
+file
+
+
+
+
+2013-12-11T00:30:53.412263Z
+1e74c623feb6b7bb6399a1b00798e6b3
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+uploads
+dir
+
+bin
+dir
+
+index.html
+file
+
+
+
+
+2013-12-11T00:30:53.416263Z
+c9e3681eb6058b7459c225f014401e9f
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+makefile
+file
+
+
+
+
+2013-12-11T00:30:53.419263Z
+8357aabeb64e7b4ddfeec9feba9e4c41
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+

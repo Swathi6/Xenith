@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker
+END
+jquery.timepicker.css
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/jquery.timepicker.css
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/package.json
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/.gitignore
+END
+jquery.timepicker.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/jquery.timepicker.js
+END
+jquery.timepicker.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/jquery.timepicker.min.js
+END
+GruntFile.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/GruntFile.js
+END
+component.json
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/component.json
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/index.html
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/README.md
+END
+jt.timepicker.jquery.json
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/xenithproj/!svn/ver/11/Xenith/Xenith/js/timepicker/jt.timepicker.jquery.json
+END

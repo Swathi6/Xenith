@@ -1,0 +1,59 @@
+8
+
+dir
+30
+https://innovationxtreme.svn.cloudforge.com/xenithproj/Xenith
+https://innovationxtreme.svn.cloudforge.com/xenithproj
+
+
+
+2013-12-11T15:14:12.215264Z
+30
+mabr100
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a28ecf39-8f40-47a2-b730-172ac8bc858f
+
+Xenith
+dir
+
+Xenith.suo
+file
+31
+
+
+
+2013-12-11T04:18:09.350000Z
+14ba47a65f7fabb77a4f0b212c1e4e92
+2013-12-11T15:55:50.571700Z
+31
+swat123
+has-props
+
+Xenith.sln
+file
+
+
+
+
+2013-12-11T00:31:26.073131Z
+4c05cde560fe460f0a0811b1696e80e8
+2013-12-01T18:17:47.620445Z
+2
+mabr100
+
+packages
+dir
+
