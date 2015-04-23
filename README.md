@@ -1,11 +1,17 @@
 Xenith
 ======
+What these files are?
+The Xenith webiste was orignally hosted in Cloudforge, devleoped using Tortoise SVN version control. This github repositary hosts the files and code. The website is developed in Visual Studio and .NET
 
-This project consists of a front end website for a hotel intranet site. 
+To run this project clone the files and run the Xenith.sln file using Visual Studio. 
 
-The website is built using Visual Studio in C#, ASP.net, MSSQL and other web programming languages including HTML5, CSS3 and JavaScript.
-The basic layout of the pages is done using Twitter Bootstrap. 
-THe primary components of the webisite includes Home page, 
+
+What the project is about?
+The project contains a fully functional hotel intranet site. 
+Web languages/frameworks/tools used: Visual Studio, C#, asp.net,  HTML5, CSS3, Javascript, JQuery, third party apis, twitter bootstrap, MSSQL
+
+Pages:
+Home page, 
 Login page,
 Forum page,
 Feedback page,
@@ -13,10 +19,7 @@ news feed,
 Entertainment page with video/audio streams using HTML5.
 
 This project can be used as a hotel intranet site for the hotel guests to create an account to
-manage room service,
-connect with other guests in the hotel,
-enjoy certain entertainment privileges,
-contact the management.
+manage room service, connect with other guests in the hotel, enjoy certain entertainment privileges, contact the management.
 
 
 
